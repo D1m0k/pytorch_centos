@@ -17,4 +17,5 @@ ENV LANG=ru_RU.UTF-8
 ENV LC_ALL=ru_RU.UTF-8
 RUN pip3 install --no-cache-dir --upgrade pip
 RUN pip3 install -r requirements.txt
+RUN pip3 cache purge
 RUN dnf clean all 
